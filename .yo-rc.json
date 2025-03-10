@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "additionalSubGenerators": "spring-ai:bootstrap,spring-ai:ollama",
+    "baseName": "ai",
+    "cli": true,
+    "entities": [],
+    "generators": {
+      "docker": {
+        "command": false,
+        "priorities": ["writing", "postWriting"],
+        "sbs": true,
+        "written": true
+      },
+      "spring-ai:bootstrap": {
+        "command": false,
+        "priorities": ["postWriting"],
+        "sbs": null,
+        "written": true
+      },
+      "spring-ai:ollama": {
+        "command": false,
+        "priorities": ["postWriting"],
+        "sbs": null,
+        "written": true
+      },
+      "spring-boot": {
+        "command": false,
+        "priorities": [],
+        "sbs": true,
+        "written": true
+      }
+    },
+    "jhipsterVersion": "8.9.0",
+    "localBlueprint": false,
+    "packageJsonType": "module",
+    "sampleWritten": true,
+    "subGenerators": ["docker", "spring-boot"]
+  }
+}
